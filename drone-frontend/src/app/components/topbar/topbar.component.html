@@ -1,0 +1,7 @@
+<mat-toolbar
+  class="before-login"
+  *ngIf="(authService.isLoggedIn | async) === false"
+>
+  <a href="" class="logo">Locus</a>
+  <a href="/login">Login</a>
+</mat-toolbar>
