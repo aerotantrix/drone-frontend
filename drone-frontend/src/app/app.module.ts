@@ -11,6 +11,8 @@ import { TopbarComponent } from './components/topbar/topbar.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { AgGridModule } from 'ag-grid-angular';
+import { BinsComponent } from './components/dashboard/bins/bins.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     DashboardComponent,
     LoginComponent,
     TopbarComponent,
+    BinsComponent,
   ],
   imports: [
     HttpClientModule,
@@ -27,6 +30,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
+    AgGridModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

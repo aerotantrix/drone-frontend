@@ -1,7 +1,17 @@
 <mat-toolbar
   class="before-login"
-  *ngIf="(authService.isLoggedIn | async) === false"
+  *ngIf="(authService.isLoggedIn | async) === true"
 >
   <a href="" class="logo">Locus</a>
   <a href="/login">Login</a>
+</mat-toolbar>
+
+<mat-toolbar
+  class="after-login"
+  *ngIf="(authService.isLoggedIn | async) === false"
+>
+  <a href="/dashboard" class="logo">Locus</a>
+  <div class="items-container">
+    <a href="/logout" (click)="authService.logout()">Logout</a>
+  </div>
 </mat-toolbar>

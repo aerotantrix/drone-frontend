@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat");
 @import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
+@import "ag-grid-community/styles/ag-grid.css";
+@import "ag-grid-community/styles/ag-theme-quartz.css";
 
 * {
   font-family: "Montserrat", sans-serif;
@@ -14,8 +16,11 @@ body {
   margin: 0;
   height: 100vh;
   app-topbar {
+    top: 0;
+    left: 0;
     z-index: 999;
     position: fixed;
+    overflow: hidden;
   }
 }
 
