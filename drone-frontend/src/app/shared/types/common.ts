@@ -12,20 +12,23 @@ export class Bin {
   bin_id!: string;
   timestamp!: Date;
   row!: number;
-  col!: number;
   rack!: number;
+  shelf!: number;
+  present!: boolean;
 
   constructor(
     bin_id: string,
     timestamp: Date,
     row: number,
-    col: number,
-    rack: number
+    rack: number,
+    shelf: number,
+    present: boolean
   ) {
     this.bin_id = bin_id;
     this.timestamp = timestamp;
     this.row = row;
-    this.col = col;
     this.rack = rack;
+    this.shelf = shelf;
+    this.present = present;
   }
 }
